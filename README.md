@@ -4,7 +4,7 @@
 Welcome to the **Customer Churn Prediction** project! 🎯 This machine learning model predicts whether a customer is likely to churn based on their demographic, account, and transaction data. By using customer insights, we can proactively take action to retain valuable clients.
 
 The web app, built using **Streamlit**, allows users to input customer data and get a real-time churn prediction. This project demonstrates how machine learning can be applied to solve real-world business challenges. 📉💡
-**Live Demo**: Check out the live version of the app here: [Customer Churn Prediction Web App](#) 🌐
+**Live Demo**: Check out the live version of the app here: [Customer Churn Prediction Web App](https://customerchurnprediction-a.streamlit.app/) 🌐
 
 ## 🗂️ Project Structure
 ├── model_training.py # Model training, data preprocessing, feature engineering, and hyperparameter tuning. ├── app.py # Streamlit web app for customer churn prediction. ├── model_churn.pkl # The trained machine learning model. ├── scaler.pkl # Scaler used for feature normalization. └── churn.csv # The dataset containing customer data.
@@ -43,6 +43,15 @@ This project includes a user-friendly web application where users can input cust
 - **Preprocessing**: Input data is transformed to match the model’s feature set.
 - **Prediction**: The trained model predicts whether the customer is likely to churn.
 - **Visualization**: Display of feature importance and data distribution.
+This project allows users to predict customer churn in two ways:
+✅ Single Entry Mode – Users can manually input customer details and get an instant prediction.
+✅ Bulk Prediction Mode – Users can upload a CSV file, and the app will process multiple entries at once, returning a CSV file with predictions.
+
+📌 How to Use the Bulk Prediction Feature
+Prepare a CSV file with customer details (must match the required input format).
+Upload the file via the web app’s CSV upload feature.
+The app processes the file and applies the trained model to make predictions.
+Download the output CSV containing churn predictions for all customers.
 
 ## ⚙️ How to Run the Project
 To run this project locally, follow these simple steps:
